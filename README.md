@@ -1,2 +1,2 @@
 # Belajar-Javascript
-Belajar javascript dengan mengikutin Reading Materials Chapter 2 Topic 2
+Belajar javascript dengan mengikuti Reading Materials Chapter 2 Topic 2
