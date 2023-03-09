@@ -40,6 +40,7 @@ const studentFsw3 = [
     },
 ]
 
+//Jawaban menggunakan filter dan function
 // nomor 1
 console.log("------------YANG SUDAH MENIKAH------------")
 var nikah = studentFsw3.filter(function studentMarried (x) {
