@@ -26,7 +26,7 @@ const studentFsw3 = [
     {
         name : "Danar",
         age : 20,
-        status : "double"
+        status : "married"
     },
     {
         name : "Very",
@@ -40,10 +40,10 @@ const studentFsw3 = [
     },
 ]
 
-//nomor 1
+// nomor 1
 console.log("------------YANG SUDAH MENIKAH------------")
-var nikah = studentFsw3.filter(function(x) {
-    return x.age == 21;
+var nikah = studentFsw3.filter(function studentMarried (x) {
+    return x.status == "married";
 });
 
 console.table(nikah);
@@ -52,7 +52,7 @@ console.table(nikah);
 
 //nomor 2
 console.log("------------YANG NAMA DEPANNYA D------------");
-var hurufDepan = studentFsw3.filter(function(x) {
+var hurufDepan = studentFsw3.filter(function namaDepanD(x) {
     return x.name[0] == "D";
 });
 
@@ -62,7 +62,7 @@ console.table(hurufDepan);
 
 // nomor 3
 console.log("------------YANG UMURNYA DIATAS 20------------");
-var umurDiatas = studentFsw3.filter(function(x) {
+var umurDiatas = studentFsw3.filter(function umurLebih20(x) {
     return x.age > 20;
 });
 
@@ -72,7 +72,7 @@ console.table(umurDiatas);
 
 // nomor 4
 console.log("------------YANG UMURNYA DIATAS 20 , STATUS SINGLE DAN NAMA BELAKANG Y------------");
-var hurufBelakangY = studentFsw3.filter(function(x) {
+var hurufBelakangY = studentFsw3.filter(function namaBelakangnyaY(x) {
     
     return x.age > 20 && x.status == "single" && x.name.slice(-1) == "y";
 });
@@ -81,11 +81,11 @@ console.log(hurufBelakangY);
 
 
 
-//nomor 5
+// //nomor 5
 console.log("------------YANG UMURNYA DIATAS 20 , STATUS MENIKAH HURUF TENGAH N------------");
-var hurufTengahN = studentFsw3.filter(function(x){
+var hurufTengahN = studentFsw3.filter(function namaTengahnyaN(x){
 
-    return x.age > 9 && x.status == "married" && x.name.charAt(Math.floor(x.name.length / 2)) === "n" ;
+    return x.age > 9 && x.status == "married" && x.name.charAt(Math.floor(x.name.length / 2)) == "n" ;
 });
 
 console.log(hurufTengahN)
@@ -95,3 +95,4 @@ console.log(hurufTengahN)
 // 3. print student yang umurnya diatas 20
 // 4. print student yang umurnya diatas 20 , status single dan nama belakang Y
 // 5. print student yang umurnya diatas 20 , status menikah dan huruf tengahnhya N
+
