@@ -1,3 +1,29 @@
+//Dasar Function
+function addName() {
+    return `NarrIzzy`
+}
+alert(addName())
+
+//---------------------------
+function addName(fullname){
+    return (fullname)
+}
+alert(addName('Danar'))
+
+//---------------------------
+function addName(fullname){
+    console.log('Nama Saya adalah ' + fullname)
+}
+addName('Danar Zulfian W')
+
+//---------------------------
+function addName(firstname , lastname){
+    console.log(firstname , lastname)
+}
+addName('Stipe','Hohe')
+
+
+
 //Contoh Function 1
 const x = 1;
 const y = 2;
