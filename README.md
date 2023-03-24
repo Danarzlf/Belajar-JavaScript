@@ -1,2 +1,2 @@
 # Belajar-JavaScript
-Belajar Bahasa Pemograman JavaScript 
+Belajar Bahasa Pemograman JavaScript.
