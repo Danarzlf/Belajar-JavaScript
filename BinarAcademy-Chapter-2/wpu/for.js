@@ -29,7 +29,7 @@ let noAngkot = 1;
 //         console.log("Angkot No." + noAngkot + " tidak dapat beroperasi");
 //     }
 // }
-
+  
 
 // let angka = prompt("masukkan angka =")
 
