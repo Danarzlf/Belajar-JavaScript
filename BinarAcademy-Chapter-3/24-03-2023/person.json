@@ -1,0 +1,51 @@
+[
+  {
+    "_id": 8,
+    "age": 29,
+    "eyeColor": "blue",
+    "name": "Clements Griffith"
+  },
+  {
+    "_id": 1,
+    "age": 30,
+    "eyeColor": "green",
+    "name": "Carney Hoffman"
+  },
+  {
+    "_id": 5,
+    "age": 40,
+    "eyeColor": "brown",
+    "name": "Bond Dean"
+  },
+  {
+    "_id": 7,
+    "age": 21,
+    "eyeColor": "brown",
+    "name": "Dickerson Fox"
+  },
+  {
+    "_id": 5,
+    "age": 35,
+    "eyeColor": "blue",
+    "name": "Richmond Byers"
+  },
+  {
+    "id": 69,
+    "age": 20,
+    "eyeColor": "red",
+    "name": "Danar Zulfian Wirakusumah"
+  },
+  {
+    "id": 9,
+    "age": 32,
+    "eyeColor": "red",
+    "name": "Charles"
+  },
+  {
+    "id": 16,
+    "_id": 999,
+    "age": 32,
+    "eyeColor": "blue",
+    "name": "Jorge Masvidal"
+  }
+]

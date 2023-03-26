@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarrIzzyMMA</title>
+</head>
+
+<body>
+    <div>
+        <p id="tulisan">Ini adalah Tulisan</p>
+    </div>
+
+    <div id="menu">
+        <li id="first">First</li>
+        <li id="second">Second</li>
+        <li id="third">Third</li>
+    </div>
+
+    <div id="menu-2">
+        <li id="pertama">Pertama</li>
+        <li id="kedua">Kedua</li>
+        <li id="ketiga">Ketiga</li>
+    </div>
+
+    <div id="menu-3">
+        <li id="siji">Siji</li>
+        <li id="loro">Loro</li>
+        <li id="telu">Telu</li>
+    </div>
+
+
+    <h1 id="judul">ini akan diganti</h1>
+    <p id="description">ini juga akan diganti</P>
+
+
+    <div id="content" class="contentpppppppppppppppppppp">
+        <h1 id="judul-content" class="judul-content">This is Title</h1>
+        <p id="isi-content" class="isi-content">this is description</p>
+    </div>
+
+
+    <div id="content-2" class="content-2">
+        <h1 id="judul-2" class="judul-2">Ini akan dihapus</h1>
+        <p id="description-2" class="description-2">Ini akan dihapus</p>
+    </div>
+
+
+    <div id="content-3" class="content-3">
+
+    </div>
+    <script>
+        //PROPERTIES
+        // console.info(document)
+        // console.info(document.title)
+        // console.info(document.head)
+        // console.info(document.images)
+        // console.info(document.contentType)
+
+
+        //Element = Node yang berbentuk element
+
+
+        // METHOD
+        const tulisan = document.getElementById("tulisan")
+        console.info(tulisan)
+
+
+
+        //METHOD ambil node
+        const menu = document.getElementById("menu")
+        console.info(menu)
+
+        const second = document.getElementById("second")
+        console.info(second)
+
+
+
+        //NODE PROPERTIES
+        const menu2 = document.getElementById("menu-2")
+        console.info(menu2)
+        console.info(menu2.childNodes) //untuk mengetahui isi isi dari parents node
+
+        const kedua = document.getElementById("kedua")
+        console.info(kedua)
+        console.info(kedua.textContent) //untuk mengetahui isi nya
+        console.info(kedua.previousSibling.previousSibling) //untuk mencari siblings/yg sejajar sebelumnya , harus dua kali karena kalau satu akan mendetect text/baris kosong
+        console.info(kedua.nextSibling.nextSibling)//mencari siblings selanjutnya
+
+
+
+        //METHOD NODE
+        const menu3 = document.getElementById("menu-3")
+        menu3.removeChild(document.getElementById("siji"))   //method node untuk menghapus child
+        menu3.removeChild(document.getElementById("loro"))
+
+
+
+        //ELEMENT PROPERTIES
+        const judul = document.getElementById("judul")
+        judul.textContent = "Belajar JavaScript DOM"  // untuk mengganti isi text content / menambah apabila kosong isi elementnya
+
+        const description = document.getElementById("description")
+        description.textContent = "Selamat Belajar JavaScript DOM" //unutk mengganti isi text content
+
+
+
+        const content = document.getElementById("content") //untuk mengetahui elemen elemennya 
+        console.info(content.id)
+        console.info(content.className)
+        console.info(content.tagName)
+
+
+
+        // ELEMENT METHOD
+        const description2 = document.getElementById("description-2")
+        const judul2 = document.getElementById("judul-2")
+
+        description2.remove()
+        judul2.remove()
+
+        // document.getElementById("description-2").remove()    //bisa juga penulisan langsung seperti ini
+
+
+
+
+        //MEMBUAT ELEMEN
+        const content3 = document.getElementById("content-3")
+
+        const bikinjudul = document.createElement("h1")
+        bikinjudul.textContent = "Belajar JavaScript DOM"
+        content3.appendChild(bikinjudul)
+
+        const bikindeskripsi = document.createElement("p")
+        bikindeskripsi.textContent = "Sealamat Belajar JavaScript DOM"
+        content3.appendChild(bikindeskripsi)
+
+
+    </script>
+</body>
+
+</html>
